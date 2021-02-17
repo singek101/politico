@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.5px;
+    
+}
+.signin-page {
+    padding: 10px;
+    width: 360px;
+    margin: 50px 0 0 400px;
+    background-color:black;
+    opacity: 0.7;
+    border-radius: 20px;
+
+}
+.signin-page h1 {
+    text-align: center;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.signin-page a {
+    text-decoration: none;
+}
+#w {
+    font-size: 30px;
+    color: orange;
+}
+.signin-page form p {
+    margin-top: 50px;
+}
+#font {
+    font-size: 12px;
+    margin-top: 30px;
+    color: grey;
+}
+form input {
+    width:320px ;
+    margin-bottom: 20px;
+    border: none;
+    height: 25px;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+}
+.signin-button {
+    width: 320px;
+    margin:20px 0 0 10px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.753);
+    border: none;
+    outline: none;
+}
+.signin-button:hover {
+    cursor: pointer;
+    background-color:rgba(255, 166, 0, 0.151);    
+}
