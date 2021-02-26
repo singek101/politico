@@ -3,24 +3,87 @@ body {
     margin: 0;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../images/dark.jpg);
+   /** background-image: url(../images/dark.jpg); **/
+   background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 1.5px;
     
 }
 .signin-page {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    opacity: 0.7;
+}
+.signin-form {
+    width: 95%;
+    background-color: black;
+}
+#textalign {
+    text-align: center;
+}
+.signin-form h1 {
     padding: 10px;
+    font-size: 20px;
+    color: rgba(255, 208, 0, 0.788);
+}
+.signin-form p {
+    font-size: 15px;
+}
+.signin-form input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+
+}
+#margin-left {
+    margin-left: 5%;
+}
+.signin-form button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 166, 0, 0.877);
+}
+.signin-form button:hover {
+    background-color: rgba(255, 166, 0, 0.404);
+}
+.footer-section {
+    background-color: black;
+    opacity: 0.5;
+    border-top: 10px solid  rgba(255, 166, 0, 0.877);;
+    display: grid;
+    place-items: center;
+    height: 20vh;
+}
+@media(min-width:768px) {
+    .signin-form {
+        width: 35%;
+    }   
+}
+/**
+.signin-page {
+    padding: 15px;
     width: 360px;
-    margin: 50px 0 0 400px;
+    display: grid;
+    place-items: center;
     background-color:black;
     opacity: 0.7;
-    border-radius: 20px;
-
 }
 .signin-page h1 {
     text-align: center;
     margin-top: 0;
+    padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .signin-page a {
@@ -30,7 +93,7 @@ body {
     font-size: 30px;
     color: orange;
 }
-.signin-page form p {
+#top-p {
     margin-top: 50px;
 }
 #font {
@@ -41,6 +104,7 @@ body {
 form input {
     width:320px ;
     margin-bottom: 20px;
+    color: white;
     border: none;
     height: 25px;
     outline: none;
@@ -51,7 +115,6 @@ form input {
     width: 320px;
     margin:20px 0 0 10px;
     height: 50px;
-    border-radius: 20px;
     color: white;
     background-color: rgba(255, 166, 0, 0.753);
     border: none;
@@ -61,3 +124,179 @@ form input {
     cursor: pointer;
     background-color:rgba(255, 166, 0, 0.151);    
 }
+
+/**
+@media (max-width:1224px) {
+    .signin-page {
+        padding: 10px;
+        width: 400px;
+        margin: 50px 0 0 390px;
+        background-color:black;
+        opacity: 0.6;
+    }   
+}
+@media (max-width:1124px) {
+    .signin-page {
+        padding: 10px;
+        width: 400px;
+        margin: 50px 0 0 380px;
+        background-color:black;
+        opacity: 0.6;
+    }   
+}
+@media (max-width:1318px) {
+    .signin-page {
+        padding: 10px;
+        width: 400px;
+        margin: 50px 0 0 394px;
+        background-color:black;
+        opacity: 0.6;
+    }   
+}
+@media (max-width:1316px) {
+    .signin-page {
+        padding: 10px;
+        width: 400px;
+        margin: 50px 0 0 392px;
+        background-color:black;
+        opacity: 0.6;
+    }   
+}
+@media (max-width:650px) {
+    .signin-page {
+        padding: 10px;
+        width: 400px;
+        margin: 70px 0 0 100px;
+        background-color:black;
+        opacity: 0.6;
+    }   
+}
+@media (max-width:550px) {
+    .signin-page {
+        padding: 10px;
+        width: 300px;
+        margin: 70px 0 0 100px;
+        background-color:black;
+        opacity: 0.6;
+    }
+    .signin-page h1 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .signuin-page a {
+        text-decoration: none;
+    }
+    #w {
+        color: orange;
+    }
+    .signin-page form p {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    #top-p {
+        margin-top: 10px;
+    }
+    #font {
+        font-size: 8px;
+        margin-top: 10px;
+        text-align: center;
+        color: grey;
+    }
+    form {
+        padding: 5px;
+    }
+    form input {
+        width:250px;
+        margin-bottom: 10px;
+        font-size: 8px;
+        color: white;
+        border: none;
+        height: 10px;
+        outline: none;
+        background: transparent;
+        border-bottom: 1px solid grey;
+    }
+    .signin-button {
+        width: 250px;
+        height: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: rgba(255, 166, 0, 0.753);
+        border: none;
+        outline: none;
+    }
+    .signin-button:hover {
+        cursor: pointer;
+        background-color:rgba(255, 166, 0, 0.151);    
+    }
+
+}
+
+
+@media (max-width:320px) {
+    .signin-page {
+        padding: 10px;
+        width: 200px;
+        margin: 70px 0 0 60px;
+        background-color:black;
+        opacity: 0.6;
+    }
+    .signin-page h1 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .signuin-page a {
+        text-decoration: none;
+    }
+    #w {
+        color: orange;
+    }
+    .signin-page form p {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    #top-p {
+        margin-top: 10px;
+    }
+    #font {
+        font-size: 8px;
+        margin-top: 10px;
+        text-align: center;
+        color: grey;
+    }
+    form {
+        padding: 5px;
+    }
+    form input {
+        width:180px;
+        margin-bottom: 10px;
+        font-size: 8px;
+        color: white;
+        border: none;
+        height: 10px;
+        outline: none;
+        background: transparent;
+        border-bottom: 1px solid grey;
+    }
+    .signin-button {
+        width: 180px;
+        height: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: rgba(255, 166, 0, 0.753);
+        border: none;
+        outline: none;
+    }
+    .signin-button:hover {
+        cursor: pointer;
+        background-color:rgba(255, 166, 0, 0.151);    
+    }
+
+}
+**/
