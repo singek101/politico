@@ -12,19 +12,50 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
+    position: relative;
 }
+.nav-bar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+}
+.nav-bar h1 {
+    color: white;
+    top: 0;
+}
+.nav-bar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-bar li {
+    list-style: none;
+}
+.nav-bar li:hover {
+    border-bottom: 1px solid orange;
+}
+.nav-bar a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
 #orange {
     color: orange;
 }
 .content-area {
     color: white;
-    padding: 15px;
+    padding: 30px;
+    margin-top: 20px;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    width: 90%;
-    box-shadow: 100px 100px 100px 100px;
+    width: 100%;
+    
 }
 .content-area p {
     font-size: 30px;
@@ -49,16 +80,26 @@ body {
 .text-area {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: lightgray;
+    row-gap: 20px;
+    background-color: black;
     text-align: center;
+    color: white;
     line-height: 1.5em;
     padding: 15px;
-    width: 90%;
+    width: 100%;
+}
+.text-child1 {
+    background-color: grey;
+    padding: 10px;
+}
+.text-child2 {
+    background-color: grey;
+
 }
 .footer-section {
     height: 10vh;
     color: white;
-    width: 95%;
+    width: 100%;
     text-align: center;
     padding: 10vh;
     background-color: black;
@@ -68,7 +109,6 @@ body {
     .content-area {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 95%;
     }
     .content-area p {
         font-size: 50px;
@@ -77,7 +117,9 @@ body {
         margin-top: 27.5vh;
     }
     .text-area {
-        width: 90%;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
     }
 
 }
